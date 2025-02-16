@@ -17,9 +17,10 @@ def setup_method(self, method):
   self.driver = webdriver.Chrome(options=options)
   self.vars = {}
 
-  
   def teardown_method(self, method):
     self.driver.quit()
+
+
   
   def test_adminPage(self):
     self.driver.get("https://josueliasl.github.io/cse270-teton/admin.html")
